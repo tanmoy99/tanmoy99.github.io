@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="fixed bottom-4 right-4 z-20">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">
+            <i class="fas fa-angle-up"></i>
+        </button>
+    </div>
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">
+                    <a href="#">Portfo<span class="text-blue-500">lio.</span></a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-white">Home</a>
+                    <a href="#about" class="text-white">About</a>
+                    <a href="#services" class="text-white">Services</a>
+                    <a href="#skills" class="text-white">Skills</a>
+                    <a href="#teams" class="text-white">Teams</a>
+                    <a href="#contact" class="text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="bg-gray-900 text-white min-h-screen flex items-center justify-center" id="home">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <div class="text-3xl font-bold">Hello, my name is</div>
+            <div class="text-4xl font-extrabold">Tanmoy Bhowmick</div>
+            <div class="text-2xl mt-4">And I'm a <span class="text-blue-500 typing"></span></div>
+            <div class="py-6">
+                <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-full mt-8 hover:bg-blue-600 transition duration-300">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="bg-gray-100" id="about">
+        <div class="max-w-screen-xl mx-auto py-16">
+            <h2 class="text-4xl font-bold text-center mb-8">About me</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2">
+                    <img src="images/banner.jpg" alt="" class="mx-auto md:mx-0 md:mr-8 rounded-full" width="300" height="300">
+                </div>
+                <div class="md:w-1/2 mt-4 md:mt-0">
+                    <div class="text-xl font-semibold">I'm Tanmoy Bhowmick and I'm a <span class="text-blue-500 typing-2"></span></div>
+                    <p class="mt-4">Adaptive Learner. Innovator. Analytical Person</p>
+                    <a href="Resume.pdf" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="bg-gray-200" id="services">
+        <div class="max-w-screen-xl mx-auto py-16">
+            <h2 class="text-4xl font-bold text-center mb-8">My services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="https://github.com/tanmoy99?tab=repositories" class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="text-xl font-semibold mb-2">Web Design</div>
+                    <p class="text-gray-600">I developed many web-based applications. Click here to view the code of my projects.</p>
+                </a>
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="text-xl font-semibold mb-2">Advertising</div>
+                    <p class="text-gray-600">Hello welcome to my page... here I try to show my work.</p>
+                </div>
+                <a href="https://github.com/tanmoy99/Cdbl_oop_java" class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="text-xl font-semibold mb-2">Apps Design</div>
+                    <p class="text-gray-600">I developed a Java FXMl Based desktop application. Click here to view the code and paper works.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="bg-gray-100" id="skills">
+        <div class="max-w-screen-xl mx-auto py-16">
+            <h2 class="text-4xl font-bold text-center mb-8">My skills</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2">
+                    <div class="text-xl font-semibold">My creative skills & experiences.</div>
+                    <p class="mt-4">I'm a final year CSE student with a diverse range of skills that I've developed throughout my academic journey. I'm proficient in programming languages like Java, Python, and C++, and I have a solid understanding of data structures, algorithms, and computer architecture. I have hands-on experience with software development tools and platforms, including IDEs, Git, and cloud computing services. I've demonstrated strong analytical and problem-solving skills through various projects and coursework, and I'm confident in my ability to take on complex technical challenges. Additionally, I possess excellent communication skills and have successfully presented technical information to non-technical audiences. I'm a team player and have worked effectively in various group projects, showcasing my ability to collaborate with others and work towards a common goal.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Read more</a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="text-xl font-semibold">Skills Summary</div>
+                    <div class="mb-4 px-6">
+                        <div class="text-gray-600">HTML</div>
+                        <div class="text-gray-600">CSS</div>
+                        <div class="text-gray-600">JavaScript</div>
+                        <div class="text-gray-600">PHP</div>
+                        <div class="text-gray-600">MySql</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="bg-gray-200" id="teams">
+        <div class="max-w-screen-xl mx-auto py-16">
+            <h2 class="text-4xl font-bold text-center mb-8">My Work</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="box">
+                        <img src="images/images.jpeg" alt="">
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="box">
+                        <img src="images/ecommerce-wordpress-themes.jpg" alt="">
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="box">
+                        <img src="images/best-wordpress-themes-1.jpg" alt="">
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="box">
+                        <img src="images/best-wordpress-themes-1.jpg" alt="">
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="block p-4 rounded-lg bg-white hover:bg-blue-100 transition duration-300">
+                    <div class="box">
+                        <img src="images/best-wordpress-themes-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="bg-gray-100" id="contact">
+        <div class="max-w-screen-xl mx-auto py-16">
+            <h2 class="text-4xl font-bold text-center mb-8">Contact me</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2">
+                    <div class="text-xl font-semibold">Get in Touch</div>
+                    <p class="mt-4">For Any Question</p>
+                    <div class="mt-4">
+                        <div class="flex mb-2 items-center">
+                            <i class="fas fa-user text-blue-500"></i>
+                            <div class="ml-4">
+                                <div class="text-xl font-semibold">Name</div>
+                                <div class="text-gray-600">Tanmoy Bhowmick</div>
+                            </div>
+                        </div>
+                        <div class="flex mb-2 items-center">
+                            <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            <div class="ml-4">
+                                <div class="text-xl font-semibold">Address</div>
+                                <div class="text-gray-600">Basundhora R/A, Dhaka-1229</div>
+                            </div>
+                        </div>
+                        <div class="flex mb-2 items-center">
+                            <i class="fas fa-envelope text-blue-500"></i>
+                            <div class="ml-4">
+                                <div class="text-xl font-semibold">Email</div>
+                                <div class="text-gray-600">tanmoybhowmik98@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-4 md:mt-0">
+                    <div class="text-xl font-semibold">Message me</div>
+                    <form action="#" class="mt-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Name" class="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Email" class="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Subject" class="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea cols="30" rows="10" placeholder="Message.." class="w-full py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
